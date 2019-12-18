@@ -1,14 +1,14 @@
 'use strict';
 
 const generateKey = (length, possible) => {
-  let randomString = '';
+  let Str = '';
   const range = possible.length;
   for (let i = 1; i <= length; ++i) {
-    const possibleNumber = Math.floor(Math.random() * range);
-    randomString += possible[possibleNumber];
+    const Num = Math.floor(Math.random() * range);
+    Str += possible[Num];
   }
-  return randomString;
+  return Str;
 };
 const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-generateKey(10, characters);
+
 module.exports = { generateKey };
